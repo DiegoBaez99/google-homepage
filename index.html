@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google</title>
     <link href="styles/style.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+    <!--<link rel="stylesheet" type="text/css" href="styles/normalize.css">-->
+    
 </head>
 
 <header id="Navegacion">
@@ -23,17 +24,22 @@
 </header> 
 
 <body>
-    <div>
-        <img id="logo-google" src="images/googlelogo_color_272x92dp.png">
-    <div>
-        <input type="text" id="search">
-            <div> 
-                <input type="button" id="search-google" value="Busqueda con Google">
-                <input type="button" id="search-lucky"  value= "Me siento con suerte">          
-            </div>
-    </div>
+    <div class="content">
+        <div class="image_logo">
+            <img id="logo-google" src="images/googlelogo_color_272x92dp.png">
+        </div>
 
-    
+        <div class="search">
+            <input type="search" id="search">
+            <img id="logo-search" src="images/outline_search_black_24dp.png">
+        </div>
+            
+        <div id="buttons"> 
+            <button href="https://www.google.com.ar" id="search-google" >Busqueda con Google</button>
+            <button href="https://www.google.com.ar" id="search-lucky" >Me Siento con Suerte</button>        
+        </div>
+        
+    </div>
     
     
 </body>

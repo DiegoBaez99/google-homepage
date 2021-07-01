@@ -4,7 +4,7 @@ nav ul {
     height: 20px;
     text-align: right;
     padding-top: 10px;
-    margin: 2px 2px 5px 5px;
+    margin: 2px 2px 50px 5px;
 }
 
 nav a {
@@ -21,46 +21,71 @@ nav a {
 
 }
 
-#logo-google {
-    max-height: 100%;
-    max-width: 100%;
-    object-fit: contain;
-    object-position: center bottom;
-    width: auto;
-    display: block;
-    margin: auto;   
+.image_logo {
+    display: flex;
+    justify-content: center;
+     
 }
 
-#search  {
-    display: block;
-    margin: auto;
-    outline: none;
-    border-radius: 22px;
+#search {
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+    background-color: #f8f9fa;  
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    line-height: 27px;
     height: 40px;
-    width: 700px;
+    width: 600px;
+    border-radius: 22px;
     border-color: grey;
-    padding-left: 20px;
+    margin-top: 1px;
+    padding-left: 50px;
+
+    outline: none;
+    position: relative;
+    z-index: 1;
+}
+#logo-search {
+    position: absolute;
+    z-index: 3;
+    margin-left: -580px;
+    margin-top: 10px;
+    
 }
 
-#search-google {
-    display: block;
-    width: 160px;
-    height: 30px;
-    text-align: center;
-    padding: 1px 1px 1px 1px;
-    margin: auto;
-    
 
-    
+
+#search-google, #search-lucky{
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    color: #3c4043;   
+    border-radius: 4px;    
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 25px 12px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+#search-google:hover, #search-lucky:hover{
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);    
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
 }
 
-#search-lucky {
-
-    display: inline;
-    width: 160px;
-    height: 30px;
+#buttons {
     text-align: center;
-    padding: 1px 1px 1px 1px;
-    margin: auto;
+}
 
+.content {
+    margin-top: 400px;
+}
+
+.search {
+    text-align: center;
 }
